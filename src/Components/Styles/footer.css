@@ -1,0 +1,32 @@
+footer {
+  background-color: rgb(170, 137, 120);
+  border-top: 9px solid white;
+  height: 340px;
+  width: 100%;
+}
+
+.simbolo {
+  align-items: center;
+  background-color: white;
+  border-radius: 60%;
+  height: 55px;
+  justify-content: center;
+  margin-top: -20px;
+  margin-left: 48%;
+  width: 55px;
+}
+
+.roleta {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.carosel {
+  width: 100%;
+}
+
+.carousel-root {
+  width: auto;
+}

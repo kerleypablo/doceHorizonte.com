@@ -1,0 +1,30 @@
+.card {
+ margin-left: 20px;
+}
+
+.cardBody {
+  text-align: center;
+  background-color: rgba(201, 199, 196, 0.437);
+  width: 180px;
+  position: absolute;
+  top: 130px;
+  margin-top: 30px;
+  height: 80px;
+}
+
+.cardTitle {
+  margin-top: -20px;
+  margin-bottom: -4px;
+  font-size: 30px;
+}
+
+.cardImg {
+  transition: 2s;
+  height: 240px;
+ }
+
+.cardImg:hover {
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
