@@ -6,7 +6,7 @@ function BodyHome() {
     <div>
       <ImgCarrosel />
     </div>
-  )
-} 
+  );
+}
 
 export default BodyHome;

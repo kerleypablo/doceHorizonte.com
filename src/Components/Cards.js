@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './Styles/Cards.css';
 
@@ -17,5 +18,10 @@ function Cards({ textifo = 'text', img = '' }) {
     </Card>
   );
 }
+
+Cards.propTypes = {
+  textifo: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+};
 
 export default Cards;
