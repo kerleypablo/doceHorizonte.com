@@ -1,12 +1,10 @@
-import React, { useState, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import Context from './Context';
 
 function Provider({ children }) {
-  const [Menuprodutos, setMenuProdutos] = useState({ ativado: false });
   const state = useMemo(() => ({
-    Menuprodutos,
-    setMenuProdutos,
+
   }), []);
 
   return (

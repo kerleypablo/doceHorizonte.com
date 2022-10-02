@@ -1,20 +1,24 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Styles/Header.css';
 import { IoMdLogIn } from 'react-icons/io';
 import logo from '../images/logo.png';
-import Context from '../Context/Context';
 
 function Header() {
-  const { Menuprodutos, setMenuProdutos } = useContext(Context);
+  const [menuprodutos, setMenuProdutos] = useState({ ativado: true });
+
+  const handleInput = () => {
+
+  };
+
   useEffect(() => {
     const menuAtivo = document.querySelector('.dropdown');
     menuAtivo.addEventListener('click', () => (
-      Menuprodutos.ativado
+      menuprodutos.ativado
         ? setMenuProdutos({ ativado: false })
         : setMenuProdutos({ ativado: true })
     ));
-  }, [Menuprodutos]);
+  }, [menuprodutos]);
 
   return (
     <div className="subMenu">
@@ -24,10 +28,9 @@ function Header() {
         </div>
         <div className="menu_Header">
           <a href=" ">
-            {' '}
             <Link to="/profile">sobre</Link>
           </a>
-          <a href=" " className="dropdown"><Link to="/">Produtos</Link></a>
+          <a href=" " onClick={handleInput} className="dropdown"><Link to="/">Produtos</Link></a>
           <a href=" "><Link to="/contato">Contato</Link></a>
         </div>
         <div>
@@ -37,7 +40,7 @@ function Header() {
           </Link>
         </div>
       </header>
-      { Menuprodutos.ativado
+      { menuprodutos.ativado
         ? (
           <div className="link_subMenu">
             <a href=" "><Link to="/contato">bolos</Link></a>
