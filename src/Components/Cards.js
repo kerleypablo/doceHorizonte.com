@@ -7,7 +7,7 @@ import './Styles/Cards.css';
 
 function Cards({ textifo = 'text', img = '' }) {
   return (
-    <Card className="card" style={{ width: '180px' }}>
+    <Card className="card" style={{ width: '16vw' }}>
       <Card.Img className="cardImg" variant="top" src={img} />
       <Card.Body className="cardBody">
         <Card.Text className="cardTitle">{ textifo }</Card.Text>

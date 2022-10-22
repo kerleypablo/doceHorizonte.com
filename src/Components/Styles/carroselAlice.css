@@ -1,0 +1,12 @@
+.imgCarrosel {
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 3%;
+}
+
+@media(max-width: 500px) { 
+    .imgCarrosel {
+        width: 150px;
+    }
+  }
+  

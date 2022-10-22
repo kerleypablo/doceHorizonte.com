@@ -1,5 +1,5 @@
 .img1 {
-  height: 45vh;
+  height: 85vh;
   width: 100%;
 }
 
@@ -9,4 +9,11 @@
 
 .text_img {
   background-color: rgba(128, 128, 128, 0.365);
+}
+
+@media(max-width: 500px) { 
+  .img1 {
+    height: 30vh;
+    width: 100%;
+  }
 }
