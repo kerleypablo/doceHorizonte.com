@@ -6,8 +6,14 @@ import { Link } from 'react-router-dom';
 import './Styles/Cards.css';
 
 function Cards({ textifo = 'text', img = '' }) {
+  const tela = window.screen.width;
+  let valCard = '';
+  if (tela <= 600) {
+    valCard = '48vw';
+  } else valCard = '16vw';
+
   return (
-    <Card className="card" style={{ width: '16vw' }}>
+    <Card className="card" style={{ width: valCard }}>
       <Card.Img className="cardImg" variant="top" src={img} />
       <Card.Body className="cardBody">
         <Card.Text className="cardTitle">{ textifo }</Card.Text>

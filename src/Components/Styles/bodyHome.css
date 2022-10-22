@@ -1,6 +1,7 @@
 .producstCarrosel {
    padding: 55px 5%;
    justify-content: center;
+   height: 100%;
 }
 
 @media(max-width: 900px) { 
