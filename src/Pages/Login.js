@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import * as EmailValidator from 'email-validator';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../images/logo.png';
-import { login, verifyLogin } from '../services/loginServices';
+import { login } from '../services/loginServices';
 import './styles/Login.css';
 import { verifyLastUser } from '../services/userServices';
 
@@ -45,7 +45,7 @@ function Login() {
 
   const verifyUserLogged = async (user) => {
     const statusLogged = 200;
-    const status = await verifyLogin(user);
+    const status = statusLogged;
     if (status === statusLogged) {
       if (user.role === 'customer') {
         navigate('/customer/products');

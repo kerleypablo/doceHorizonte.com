@@ -41,7 +41,6 @@ const verifyLogin = async (user) => {
         authorization: user.token,
       },
     });
-    console.log(result);
     return result.status;
   } catch (error) {
     return [];
