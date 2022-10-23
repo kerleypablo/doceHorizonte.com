@@ -1,0 +1,86 @@
+.box_principal {
+    align-items: center;
+    color: red;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    height: 100vh;
+  }
+  
+  .box_logo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -55px;
+    border-radius: 3%;
+  }
+  
+  .box_logo img {
+    border-radius: 50px;
+    width: 260px;
+  }
+  
+  .box_logo h2 {
+    color: white;
+    font-size: 30px;
+  }
+  
+  .forms_login {
+    align-items: center;
+    background-color: rgb(254, 252, 249);
+    border: 0.5px solid black;
+    border-radius: 8px;
+    box-shadow: 0 2px 9px 3px rgb(227, 203, 129);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 50px;
+  }
+  
+  .label_login {
+    align-items: center;
+    color: rgb(83, 59, 59);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px;
+  }
+  
+  input {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 1px gray;
+    height: 25px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 250px;
+  }
+  
+  .button_login {
+    background-color: rgb(207, 185, 118);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    margin: 5px;
+    width: 260px;
+  }
+  
+  .button_Register {
+    border: 3px solid rgb(128, 107, 0);
+    border-radius: 5px;
+    color: rgb(100, 72, 0);
+    font-size: 20px;
+    height: 40px;
+    margin: 5px;
+    width: 260px;
+  }
+  
+  .button_login:disabled {
+    background-color: rgb(176, 172, 156);
+    color: white;
+    font-size: 20px;
+    width: 260px;
+  }

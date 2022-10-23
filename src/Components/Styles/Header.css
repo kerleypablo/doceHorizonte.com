@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Arsenal&family=Rajdhani:wght@300;400&family=Syncopate&family=Teko:wght@300&family=Viaoda+Libre&display=swap');
 
 header {
-  background-color: rgb(195, 188, 188);  
+  background-color: antiquewhite; 
   width: 100vw; 
   height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 5px solid brown;
 }
 
 .subMenu {  
-  background-color: black;
+  background-color: rgb(89, 42, 42);
   width: 100vw;
-  color:black;
+  color:rgb(249, 245, 241);
   display: flex;
   flex-direction: column;
 }
@@ -23,7 +24,7 @@ header {
 }
 
 .link_subMenu a {
-  color: white;
+  color: antiquewhite;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
@@ -33,6 +34,7 @@ header {
 
 .link_subMenu a:hover {
   text-decoration: overline;
+  color: white;
 }
 
 .logo_header img {
@@ -50,13 +52,13 @@ header {
   margin-left: -5px;
   padding-right: 10px;
   text-decoration: none;
-  color: white;
+  color: rgb(95, 54, 6);
   font-size: x-large;
   font-family: 'Viaoda Libre', cursive;
 }
 
 .menu_Header a :hover {
- color: black;
+ color: rgb(184, 171, 171);
 }
 
 .links_header {
@@ -68,4 +70,11 @@ header {
   display: flex;
   flex-direction: column;
   position: absolute;
+}
+
+@media(max-width: 500px) { 
+  .menu_Header a {
+    font-size: large;
+  }
+  
 }

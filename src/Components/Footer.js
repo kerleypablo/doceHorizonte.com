@@ -6,7 +6,7 @@ import logo from '../images/logo.png';
 export default function Footer() {
   return (
     <footer>
-      <div className="blackLine"><p>doce Horizonte</p></div>
+      <div className="blackLine" />
       <div className="boxredes">
         <div className="logo_footer">
           <img src={logo} alt="logo" />
@@ -16,11 +16,10 @@ export default function Footer() {
         </div>
         <div>
           <a href="https://wa.me/message/4YAMNDLSQNXOJ1">
-            fale conosco
-            <AiOutlineWhatsApp size={35} />
+            <AiOutlineWhatsApp size={35} color="antiquewhite" />
           </a>
           <a href="https://instagram.com/docehorizontedh?igshid=YmMyMTA2M2Y=">
-            <AiFillInstagram size={35} />
+            <AiFillInstagram size={35} color="antiquewhite" />
           </a>
         </div>
       </div>

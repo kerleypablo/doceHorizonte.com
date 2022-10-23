@@ -1,6 +1,6 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
-import Cards from './Cards';
+import Cards2 from './CardStyle2';
 import img1 from '../images/bento1.jpeg';
 import img2 from '../images/boloNkaed.jpeg';
 import img3 from '../images/browne2.jpeg';
@@ -30,12 +30,12 @@ function CarroselAlice() {
         playButtonEnabled
         disableAutoPlayOnAction
       >
-        <Cards text="teste" img={img1} onDragStart={handleOnDragStart} />
-        <Cards text="teste" img={img2} onDragStart={handleOnDragStart} />
-        <Cards text="teste" img={img3} onDragStart={handleOnDragStart} />
-        <Cards text="teste" img={img4} onDragStart={handleOnDragStart} />
-        <Cards text="teste" img={img5} onDragStart={handleOnDragStart} />
-        <Cards text="teste" img={img6} onDragStart={handleOnDragStart} />
+        <Cards2 text="teste" img={img1} titulo="Bentos" onDragStart={handleOnDragStart} />
+        <Cards2 text="teste" img={img2} titulo="Bolos" onDragStart={handleOnDragStart} />
+        <Cards2 text="teste" img={img3} titulo="Brownes" onDragStart={handleOnDragStart} />
+        <Cards2 text="teste" img={img4} titulo="Presentes" onDragStart={handleOnDragStart} />
+        <Cards2 text="teste" img={img5} titulo="Doces" onDragStart={handleOnDragStart} />
+        <Cards2 text="teste" img={img6} titulo="Palhas" onDragStart={handleOnDragStart} />
       </AliceCarousel>
     </section>
   );
