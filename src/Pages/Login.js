@@ -48,7 +48,6 @@ function Login() {
     const status = await verifyLogin(user);
     if (status === statusLogged) {
       if (user.role === 'customer') {
-        console.log('customer');
         navigate('/customer/products');
       } else {
         console.log('seller');
