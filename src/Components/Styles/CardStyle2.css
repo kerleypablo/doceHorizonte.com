@@ -145,10 +145,16 @@ figure.snip1477.hover figcaption {
   transition-delay: 0.2s;
 }
 
-@media(max-width: 500px) { 
+@media(max-width: 900px) { 
   figure.snip1477 img {
-     height: 260px;
+     height: 220px;
    }
+   figure.snip1477 {
+    padding-left: 1px;
+    min-width: 90px;
+    max-width: 200px;
+  
+  }
 }
 
 

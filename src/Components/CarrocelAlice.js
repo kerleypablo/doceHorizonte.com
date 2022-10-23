@@ -15,7 +15,7 @@ function CarroselAlice() {
   const handleOnDragStart = (e) => e.preventDefault();
 
   const responsive = {
-    0: { items: 1 },
+    0: { items: 2 },
     1024: { items: 5 },
   };
 
@@ -35,7 +35,7 @@ function CarroselAlice() {
         <Cards2 text="teste" img={img3} titulo="Brownes" onDragStart={handleOnDragStart} />
         <Cards2 text="teste" img={img4} titulo="Presentes" onDragStart={handleOnDragStart} />
         <Cards2 text="teste" img={img5} titulo="Doces" onDragStart={handleOnDragStart} />
-        <Cards2 text="teste" img={img6} titulo="Palhas" onDragStart={handleOnDragStart} />
+        <Cards2 text="teste" img={img6} titulo="Bentos" onDragStart={handleOnDragStart} />
       </AliceCarousel>
     </section>
   );

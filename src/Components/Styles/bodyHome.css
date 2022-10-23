@@ -5,14 +5,9 @@
    height: 100%;
 }
 
-@media(max-width: 900px) { 
+@media(max-width: 1000px) { 
     .producstCarrosel {
-        padding: 55px 10px;
+        padding: 1px 1px;
     }
   }
 
-  @media(max-width: 1000px) { 
-    .producstCarrosel {
-        padding: 10px 20%;
-    }
-  }
