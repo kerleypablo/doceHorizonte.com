@@ -50,7 +50,6 @@ function Login() {
       if (user.role === 'customer') {
         navigate('/customer/products');
       } else {
-        console.log('seller');
         navigate('/seller/orders');
       }
     } else {

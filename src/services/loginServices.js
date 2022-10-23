@@ -27,7 +27,6 @@ export const createUser = async ({
         },
       },
     );
-    console.log(data);
     return data;
   } catch (error) {
     return { error: error.response };
