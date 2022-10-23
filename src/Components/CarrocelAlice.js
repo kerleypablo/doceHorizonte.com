@@ -29,6 +29,10 @@ function CarroselAlice() {
         fadeOutAnimation
         playButtonEnabled
         disableAutoPlayOnAction
+        infinite
+        disableSlideInfo
+        disableDotsControls
+        touchMoveDefaultEvents={false}
       >
         <Cards2 text="teste" img={img1} titulo="Bentos" onDragStart={handleOnDragStart} />
         <Cards2 text="teste" img={img2} titulo="Bolos" onDragStart={handleOnDragStart} />

@@ -12,7 +12,7 @@ export default function Footer() {
           <img src={logo} alt="logo" />
         </div>
         <div>
-          <p>DOCE HORIZONTE - o doce tana na  etc e etc </p>
+          <p>- DOCE HORIZONTE -</p>
         </div>
         <div>
           <a href="https://wa.me/message/4YAMNDLSQNXOJ1">
