@@ -28,7 +28,7 @@ function Header() {
         </div>
         <div className="menu_Header">
           <a href=" ">
-            <Link to="/profile">sobre</Link>
+            <Link to="/profile">Sobre</Link>
           </a>
           <a href=" " onClick={handleInput} className="dropdown"><Link to="/">Produtos</Link></a>
           <a href=" "><Link to="/contato">Contato</Link></a>
@@ -36,16 +36,16 @@ function Header() {
         <div>
           <Link to="/logar">
             <IoMdLogIn />
-            login
+            Login
           </Link>
         </div>
       </header>
       { menuprodutos.ativado
         ? (
           <div className="link_subMenu">
-            <a href=" "><Link to="/contato">bolos</Link></a>
-            <a href=" "><Link to="/contato">doces</Link></a>
-            <a href=" "><Link to="/contato">kit</Link></a>
+            <a href=" "><Link to="/contato">Bolos</Link></a>
+            <a href=" "><Link to="/contato">Doces</Link></a>
+            <a href=" "><Link to="/contato">Kit</Link></a>
           </div>
         )
         : (<div />)}

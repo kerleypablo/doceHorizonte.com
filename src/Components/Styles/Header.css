@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Arsenal&family=Rajdhani:wght@300;400&family=Syncopate&family=Teko:wght@300&family=Viaoda+Libre&display=swap');
+
 header {
   background-color: rgb(195, 188, 188);  
   width: 100vw; 
@@ -24,7 +26,9 @@ header {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 600;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .link_subMenu a:hover {
@@ -47,6 +51,8 @@ header {
   padding-right: 10px;
   text-decoration: none;
   color: white;
+  font-size: x-large;
+  font-family: 'Viaoda Libre', cursive;
 }
 
 .menu_Header a :hover {

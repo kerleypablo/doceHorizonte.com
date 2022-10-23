@@ -1,9 +1,15 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import Cards from './Cards';
-import logo from '../images/logo.png';
+import img1 from '../images/bento1.jpeg';
+import img2 from '../images/boloNkaed.jpeg';
+import img3 from '../images/browne2.jpeg';
+import img4 from '../images/caixabrig.jpeg';
+import img5 from '../images/brigaderiros rosa.jpeg';
+import img6 from '../images/brownelado.jpeg';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './Styles/carroselAlice.css';
+import 'animate.css';
 
 function CarroselAlice() {
   const handleOnDragStart = (e) => e.preventDefault();
@@ -14,7 +20,7 @@ function CarroselAlice() {
   };
 
   return (
-    <section>
+    <section className="animate__animated animate__fadeIn">
       <AliceCarousel
         responsive={responsive}
         autoPlayInterval={1000}
@@ -24,13 +30,12 @@ function CarroselAlice() {
         playButtonEnabled
         disableAutoPlayOnAction
       >
-        <Cards text="teste" img={logo} onDragStart={handleOnDragStart} />
-        <Cards text="teste" img={logo} onDragStart={handleOnDragStart} />
-        <Cards text="teste" img={logo} onDragStart={handleOnDragStart} />
-        <Cards text="teste" img={logo} onDragStart={handleOnDragStart} />
-        <Cards text="teste" img={logo} onDragStart={handleOnDragStart} />
-        <Cards text="teste" img={logo} onDragStart={handleOnDragStart} />
-        <Cards text="teste" img={logo} onDragStart={handleOnDragStart} />
+        <Cards text="teste" img={img1} onDragStart={handleOnDragStart} />
+        <Cards text="teste" img={img2} onDragStart={handleOnDragStart} />
+        <Cards text="teste" img={img3} onDragStart={handleOnDragStart} />
+        <Cards text="teste" img={img4} onDragStart={handleOnDragStart} />
+        <Cards text="teste" img={img5} onDragStart={handleOnDragStart} />
+        <Cards text="teste" img={img6} onDragStart={handleOnDragStart} />
       </AliceCarousel>
     </section>
   );
