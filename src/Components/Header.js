@@ -30,7 +30,7 @@ function Header() {
           <a href=" ">
             <Link to="/profile">Sobre</Link>
           </a>
-          <a href=" " onClick={handleInput} className="dropdown"><Link to="/">Produtos</Link></a>
+          <button type="button" onClick={handleInput} className="dropdown">Produtos</button>
           <a href=" "><Link to="/contato">Contato</Link></a>
         </div>
         <div>
@@ -43,7 +43,7 @@ function Header() {
       { menuprodutos.ativado
         ? (
           <div className="link_subMenu">
-            <a href=" "><Link to="/contato">Bolos</Link></a>
+            <a href=" "><Link to="/produto">Bolos</Link></a>
             <a href=" "><Link to="/contato">Doces</Link></a>
             <a href=" "><Link to="/contato">Kit</Link></a>
           </div>

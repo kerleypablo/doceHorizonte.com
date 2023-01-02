@@ -1,0 +1,46 @@
+.menuLateral {
+    background-color: rgb(89, 42, 42);
+    width: 15%;
+    height: 100vh;
+}
+
+.sidebarMenuButton {
+    background-color: rgb(89, 42, 42);
+    color: wheat;
+    border: none;
+    width: 100%;
+    height: 40px;
+}
+
+.sidebar {
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar :hover {
+    background-color: rgb(139, 83, 83);
+}
+
+.linksideBar {
+    background-color: rgb(208, 200, 200);
+    border: none;
+    width: 120%;
+    margin-left: -32px;
+    height: 40px;
+    list-style: none;
+}
+
+.buttonLinksidebar {
+    padding-top: 10px;
+    display: block;
+    color: rgb(139, 83, 83);
+    font-weight: 700;
+    border: none;
+    height: 40px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.linksideBar :hover {
+    color: white;
+}

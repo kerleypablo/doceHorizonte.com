@@ -19,7 +19,7 @@
     "react-id-swiper": "^4.0.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.4.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-swipe": "^6.0.4",
     "swipe-js-iso": "^2.1.5",
     "web-vitals": "^2.1.4"

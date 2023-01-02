@@ -1,0 +1,8 @@
+.produtosList {
+    display: flex;
+    background-color: red;
+}
+
+.sectionproduto {
+    display: flex;
+}
