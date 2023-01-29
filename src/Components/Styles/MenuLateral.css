@@ -45,3 +45,10 @@
 .linksideBar :hover {
     color: white;
 }
+
+@media(max-width: 500px) { 
+  .menuLateral {
+    min-width: 35%;
+    max-width: 40%;
+  }
+}

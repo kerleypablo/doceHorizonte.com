@@ -77,19 +77,22 @@ function Produto() {
               page={currentPage}
             />
           </div>
-          <Stack spacing={2}>
-            <div className="produtosList">
-              {currentProducts.map((product) => (
-                <ProdutoCard
-                  key={product.id}
-                  id={product.id}
-                  nome={product.nome}
-                  preco={product.preco}
-                  imagem={product.imagem}
-                />
-              ))}
-            </div>
-          </Stack>
+          <div className="listProduct">
+
+            <Stack spacing={2}>
+              <div className="produtosList">
+                {currentProducts.map((product) => (
+                  <ProdutoCard
+                    key={product.id}
+                    id={product.id}
+                    nome={product.nome}
+                    preco={product.preco}
+                    imagem={product.imagem}
+                  />
+                ))}
+              </div>
+            </Stack>
+          </div>
           <div className="pagination">
             <Pagination
               count={pageCount}

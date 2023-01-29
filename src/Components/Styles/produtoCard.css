@@ -31,7 +31,7 @@
   }
   
   .ProdutoCar-preco {
-    margin: 8px 0;
+    margin: 0;
     font-size: 18px;
     font-weight: bold;
     color: #333;
@@ -69,21 +69,24 @@
 
   @media(max-width: 500px) { 
     .ProdutoCar { 
-      width: 120px;
-      height: 200px;
+      width: 220px;
+      height: 320px;
       margin: 15px;
       padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     .ProdutoCar-botao {
-      font-size: 8px;
+      font-size: 15px;
     }
     .ProdutoCar-preco {
-      font-size: 12px;
+      font-size: 18px;
     }
 
     .tituloProduto {
       font-size: 18px;
-      width: 70px;
+      width: 180px;
     }
   }
   

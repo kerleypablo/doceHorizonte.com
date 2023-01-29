@@ -11,10 +11,20 @@
 .bodyproducts {
     max-width: 100%;
     overflow: auto;
-    display: flex;
     flex-wrap: wrap;
 }
 
 .pagination {
+  justify-content: center;
   margin: auto;
 }
+.listProduct {
+    overflow: scroll;
+    height: 100vw;
+}
+
+@media(max-width: 500px) { 
+    .bodyproducts {
+     height: 100vh;
+    }
+  }
