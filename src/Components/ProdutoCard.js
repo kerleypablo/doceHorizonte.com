@@ -9,7 +9,7 @@ function ProdutoCard({
   return (
     <div className="ProdutoCar">
       <h3>{nome}</h3>
-      <img src={imagem} className="ProdutoCar-imagem" alt={nome} />
+      <img src={imagem} className="ProdutoCarimagem" alt={nome} />
       <p className="ProdutoCar-preco">
         Preço:
         {preco}

@@ -24,7 +24,9 @@ function Header() {
     <div className="subMenu">
       <header>
         <div className="logo_header">
-          <img src={logo} alt="logo" />
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
         <div className="menu_Header">
           <a href=" ">

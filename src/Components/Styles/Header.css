@@ -65,6 +65,7 @@ header {
   border: none;
   color: rgb(95, 54, 6);
   font-size: x-large;
+  margin-right: 10px;
   font-family: 'Viaoda Libre', cursive;
 }
 
@@ -91,5 +92,7 @@ header {
   .menu_Header a {
     font-size: large;
   }
-  
+  .menu_Header button {
+    font-size: medium;
+  }
 }

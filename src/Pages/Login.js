@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import * as EmailValidator from 'email-validator';
 import { useNavigate } from 'react-router-dom';
 import Logo from '../images/logo.png';
-import { login } from '../services/loginServices';
+import { loginUser } from '../services/loginServices';
 import './styles/Login.css';
 import { verifyLastUser } from '../services/userServices';
 
@@ -63,7 +63,7 @@ function Login() {
   }, []);
 
   const handleButtonLogin = async () => {
-    const result = await login({ email, password });
+    const result = await loginUser({ email, password });
     if (!result) {
       setErrorMessage('falha na comunicacao');
       return null;
@@ -76,9 +76,9 @@ function Login() {
     verifyLastUser(result);
     localStorage.setItem('user', JSON.stringify(result));
 
-    if (result.role === 'customer') navigate('/customer/products');
-    if (result.role === 'administrator') navigate('/admin/manage');
-    if (result.role === 'seller') navigate('/seller/orders');
+    if (result.type === 'customer') navigate('/customer/products');
+    if (result.type === 'administrator') navigate('/admin/manage');
+    if (result.type === 'seller') navigate('/seller/orders');
   };
 
   return (
@@ -122,7 +122,7 @@ function Login() {
           className="button_Register"
           type="button"
           data-testid="common_login__button-register"
-          onClick={() => navigate('/register')}
+          onClick={handleButtonLogin}
         >
           Ainda nao tenho Conta
         </button>

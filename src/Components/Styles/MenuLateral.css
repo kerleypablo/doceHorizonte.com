@@ -1,7 +1,8 @@
 .menuLateral {
     background-color: rgb(89, 42, 42);
-    width: 15%;
-    height: 100vh;
+    min-width: 20%;
+    max-width: 35%;
+    height: 100%vw;
 }
 
 .sidebarMenuButton {

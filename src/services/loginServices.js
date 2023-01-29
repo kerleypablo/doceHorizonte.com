@@ -1,10 +1,11 @@
 const axios = require('axios');
 
-const URL_LOGIN = 'http://localhost:3001/login';
+const URL_LOGIN = 'http://docehorizonteback-end-production.up.railway.app/login';
 const URL_USER = 'http://localhost:3001/user';
 
-export const login = async ({ email, password }) => {
+export const loginUser = async ({ email, password }) => {
   try {
+    console.log('cheguei');
     const result = await axios.post(URL_LOGIN, { email, password });
     return result.data;
   } catch (error) {

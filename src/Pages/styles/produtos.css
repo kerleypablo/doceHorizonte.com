@@ -1,8 +1,20 @@
 .produtosList {
+    justify-content: center;
     display: flex;
-    background-color: red;
+    flex-wrap: wrap;
 }
 
 .sectionproduto {
     display: flex;
+}
+
+.bodyproducts {
+    max-width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pagination {
+  margin: auto;
 }
