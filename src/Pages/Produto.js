@@ -70,6 +70,7 @@ function Produto() {
       <section className="sectionproduto">
         <Menu />
         <div className="bodyproducts">
+          <h3>Bolos</h3>
           <div className="pagination">
             <Pagination
               count={pageCount}

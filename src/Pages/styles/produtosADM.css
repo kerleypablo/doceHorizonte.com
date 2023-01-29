@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 }
 
-.sectionproduto {
+.sectionprodutoADM {
     display: flex;
 }
 
@@ -24,10 +24,11 @@
 }
 
 @media(max-width: 500px) { 
-    .bodyproducts {
-     height: 100vh;
+    .sectionprodutoADM {
+        height: 40px;
+        width: 100vw;
+        display: flex;
+        background-color: red;
     }
-    .listProduct {
-      height: 70vh; 
-    }
+
   }
