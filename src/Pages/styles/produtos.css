@@ -20,11 +20,13 @@
 }
 .listProduct {
     overflow: scroll;
-    height: 100vw;
 }
 
 @media(max-width: 500px) { 
     .bodyproducts {
      height: 100vh;
+    }
+    .listProduct {
+      height: 70vh; 
     }
   }
